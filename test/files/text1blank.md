@@ -1,0 +1,1 @@
+São geralmente recuperados a partir de um objeto que é retornado como resultado da seleção, pelo usuário, de arquivos através do elemento

@@ -1,17 +1,29 @@
 {
-  "name": "lib-markdown",
+  "name": "lib-markdown-single-file",
   "version": "1.0.0",
   "main": "index.js",
+  "bin": {
+    "mdsl": "./cli.js"
+  },
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguelmarcondes/JSLibReadAndExtractMarkdown.git"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cli": "node cli.js ./files/text1.md"
+    "test": "jest ./test",
+    "cli": "node cli.js ./files/text1.md validate"
   },
   "keywords": [],
-  "author": "",
+  "author": "miguelmarcondes",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.2",
     "node-fetch": "^3.2.10"
   },
-  "description": ""
+  "description": "lib focused on extracting links from markdown format",
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "bugs":"https://github.com/miguelmarcondes/"
 }
